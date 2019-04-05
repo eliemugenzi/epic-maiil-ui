@@ -47,30 +47,53 @@
   color: #5b00d0;
   transition: 0.5s ease-out;
 }
-.btn .btn-secondary {
+.btn.btn-secondary {
   background: #ff7100;
   color: #fff;
   border: 1px solid #ff7100;
   transition: 0.5s ease-out;
 }
-.btn .btn-secondary:hover {
+.btn.btn-secondary:hover {
   background: #fff;
   color: #ff7100;
   transition: 0.5s ease-out;
 }
-.btn .btn-dark {
+.btn.btn-dark {
   background: #000;
   color: #fff;
   border: 1px solid #000;
   transition: 0.5s ease-out;
 }
-.btn .btn-dark:hover {
+.btn.btn-dark:hover {
   background: #fff;
   color: #000;
   transition: 0.5s ease-out;
 }
+.btn.btn-white {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  transition: 0.5s ease-out;
+}
+.btn.btn-white:hover {
+  background: #000;
+  color: #fff;
+  transition: 0.5s ease-out;
+}
 .text-center {
   text-align: center;
+}
+.btn__small {
+  padding: 0.2rem;
+  cursor: pointer;
+}
+.btn__small.btn-white {
+  color: #000;
+  background: white;
+  border: 1px solid #000;
+}
+.btn__small.btn-white i.fa {
+  font-size: 13px;
 }
 header {
   margin: auto 10%;
@@ -169,6 +192,19 @@ form .field input[type="password"] {
   outline: none;
   font-family: "Heebo", sans-serif;
 }
+form .field textarea {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  border: 1px solid #5b00d0;
+  outline: none;
+  font-family: "Heebo", sans-serif;
+}
+.auth__container {
+  position: relative;
+  width: 80%;
+  margin: auto 10%;
+}
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -186,6 +222,104 @@ form .field input[type="password"] {
   to {
     opacity: 1;
   }
+}
+.inbox {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 8px;
+  margin: auto 10%;
+}
+@media (max-width: 768px) {
+  .inbox {
+    grid-template-columns: 1fr;
+  }
+}
+.inbox__mail--lists {
+  position: relative;
+}
+.inbox__mail--mails {
+  height: 80vh;
+  overflow-y: scroll;
+}
+.inbox__mail--mails .mail {
+  margin: auto 10%;
+  padding: 10px;
+  border: 1px solid #ff7100;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.5s ease-out;
+}
+.inbox__mail--mails .mail.active {
+  color: #fff;
+  background: #ff7100;
+}
+.inbox__mail--mails .mail:hover {
+  color: #fff;
+  background: #ff7100;
+  border-left: 2px solid #5b00d0;
+}
+.inbox__mail--mails .mail header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.inbox__mail--mails .mail__sender--pic {
+  position: relative;
+}
+.inbox__mail--mails .mail__sender--pic img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.inbox__mail--mails .mail__body {
+  padding: 20px;
+}
+.inbox__mail--search .inline {
+  display: flex;
+}
+.inbox__mail--search .inline input[type="search"] {
+  width: 100%;
+  position: relative;
+  height: 35px;
+  font-family: "Heebo", sans-serif;
+  border: 1px solid #5b00d0;
+  margin-right: 15px;
+}
+.inbox__mail--item {
+  border: 1px solid #5b00d0;
+  padding: 10px;
+  margin-left: 20px;
+}
+.inbox__mail--item header {
+  margin: auto 10%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .inbox__mail--item header {
+    display: block;
+  }
+  .inbox__mail--item header .receiver__actions {
+    display: inline-block;
+  }
+}
+.inbox__mail--item header .sender__address {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.inbox__mail--item header .sender__pic {
+  float: left;
+  margin-right: 15px;
+}
+.inbox__mail--item header .sender__pic img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.inbox__mail--item header .receiver__actions {
+  position: relative;
 }
 body {
   margin: 0;

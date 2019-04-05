@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Epic Mail</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <div class="toggle">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="logo">
+          <img src="./img/epicmail.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <aside class="aside">
+      <div class="aside__header">
+        <div class="logo">
+          <img src="./img/epicmail.png" alt="" />
+        </div>
+        <div class="close">
+          <i class="fa fa-window-close"></i>
+        </div>
+      </div>
+      <ul>
+        <li><a href="">Login</a></li>
+        <li><a href="">Register</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+    </aside>
+    <section class="auth">
+      <div class="auth__container">
+        <h4 class="text-center">Create an account with Epic Mail</h4>
+        <form action="">
+          <div class="field">
+            <label for="">First Name</label>
+            <input type="text" name="firstname" id="firstname" required />
+          </div>
+          <div class="field">
+            <label for="">Last Name</label>
+            <input type="text" name="lastname" id="lastname" required />
+          </div>
+          <div class="field">
+            <label for="">Email</label>
+            <input type="email" name="email" id="email" required />
+          </div>
+          <div class="field">
+            <label for="">Password</label>
+            <input type="password" name="password" id="password" required />
+          </div>
+          <input type="submit" value="Register" class="btn btn-primary" />
+        </form>
+      </div>
+    </section>
+  </body>
+  <script src="./js/main.js"></script>
+</html>
