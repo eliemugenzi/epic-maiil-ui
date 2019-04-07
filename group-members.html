@@ -47,6 +47,10 @@
         <li><a href="">Profile</a></li>
       </ul>
     </aside>
+    <dialog>
+      <h3>Hello world</h3>
+      <a href="#" class="btn btn-secondary" id="close-dialog">Close Me!</a>
+    </dialog>
     <section class="members">
       <form action="">
         <div class="field">
@@ -65,7 +69,7 @@
               <h4>Ineza Alphonsine</h4>
             </div>
             <div class="members__result--item-action">
-              <a href="" class="btn btn-secondary"
+              <a href="" class="btn btn-secondary" id="watafakamwa"
                 ><i class="fa fa-plus"></i> &nbsp; Add</a
               >
             </div>
@@ -116,7 +120,7 @@
               alt=""
             />
           </div>
-          <div class="members__'ist--item-name">
+          <div class="members__list--item-name">
             <h4>UnicoDer</h4>
           </div>
         </div>
@@ -133,6 +137,21 @@
         </div>
       </div>
     </section>
+    
   </body>
   <script src="./js/main.js"></script>
+  <script>
+    const watafaka=document.querySelector('#watafakamwa');
+    const dialog=document.querySelector('dialog');
+    const closeDialog=document.querySelector("#close-dialog");
+
+    watafaka.addEventListener('click',e=>{
+      e.preventDefault();
+      dialog.show();
+    })
+    closeDialog.addEventListener('click',e=>{
+      e.preventDefault();
+      dialog.close();
+    })
+  </script>
 </html>

@@ -101,6 +101,20 @@
 .btn__small.btn-white i.fa {
   font-size: 13px;
 }
+dialog {
+  border: 1px solid #5b00d0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.75);
+  padding: 10px 50px;
+  border-radius: 5px;
+  animation: fadeIn 1s ease-in-out;
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  text-align: center;
+}
 header {
   margin: auto 10%;
 }
@@ -501,6 +515,41 @@ form .field textarea {
   height: 45px;
   border-radius: 50%;
   border: 1px solid #ff7100;
+}
+.groupchats {
+  margin: auto 10%;
+}
+.groupchats__box {
+  position: relative;
+  border: 1px solid #5b00d0;
+}
+.groupchats__list {
+  height: 85vh;
+  overflow-y: scroll;
+}
+.groupchats__message {
+  padding: 5px;
+  margin: 10px 10%;
+  border: 1px solid #ff7100;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.groupchats__message header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.groupchats__message--body {
+  padding: 4px;
+}
+.groupchats__message--pic {
+  position: relative;
+}
+.groupchats__message--pic img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ff7100;
+  border-radius: 50%;
 }
 body {
   margin: 0;
